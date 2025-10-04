@@ -8,6 +8,7 @@ namespace Desafio1_EdwinGonzalez
 {
     internal class ArbolSistemaArchivos
     {
+        //Se crea el archivo Root y se define como carpeta
         public NodoArchivo Root { get; set; }
 
         public ArbolSistemaArchivos()
@@ -56,5 +57,7 @@ namespace Desafio1_EdwinGonzalez
 
             return Ruta(nodo.Padre) + "/" + nodo.nombre;
         }
+
+        //Para BuscarNodo y Ruta se uso recursividad para recorrer cada lista de cada nodo que es carpeta
     }
 }

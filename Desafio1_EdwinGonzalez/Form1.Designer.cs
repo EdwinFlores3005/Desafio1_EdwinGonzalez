@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             ArchivoView = new TreeView();
             fldrBtn = new Button();
             fileBtn = new Button();
@@ -108,8 +109,9 @@
             Controls.Add(fileBtn);
             Controls.Add(fldrBtn);
             Controls.Add(ArchivoView);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Form1";
+            Text = "Sistema de archivos";
             ResumeLayout(false);
             PerformLayout();
         }
