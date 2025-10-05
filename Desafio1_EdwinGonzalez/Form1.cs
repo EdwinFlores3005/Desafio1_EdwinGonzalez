@@ -114,7 +114,7 @@ namespace Desafio1_EdwinGonzalez
                     }
                     else
                     {
-                        MessageBox.Show("No se puede agregar una carpeta un archivo.");
+                        MessageBox.Show("No puedes agregar dentro de un archivo.");
                         return;
                     }
                 }

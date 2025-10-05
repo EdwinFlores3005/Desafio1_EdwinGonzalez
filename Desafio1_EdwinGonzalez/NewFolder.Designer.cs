@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewFolder));
             fldrLabel = new Label();
             nameFolder = new TextBox();
             okayBtn = new Button();
@@ -79,8 +80,9 @@
             Controls.Add(okayBtn);
             Controls.Add(nameFolder);
             Controls.Add(fldrLabel);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "NewFolder";
-            Text = "NewFolder";
+            Text = "Nueva Carpeta";
             ResumeLayout(false);
             PerformLayout();
         }

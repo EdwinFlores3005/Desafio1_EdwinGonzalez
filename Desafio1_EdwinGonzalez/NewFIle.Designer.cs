@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewFIle));
             cnclBtn = new Button();
             okayBtn = new Button();
             nameFile = new TextBox();
@@ -79,8 +80,9 @@
             Controls.Add(okayBtn);
             Controls.Add(nameFile);
             Controls.Add(fileLabel);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "NewFIle";
-            Text = "NewFIle";
+            Text = "Nuevo Archivo";
             ResumeLayout(false);
             PerformLayout();
         }
